@@ -1,0 +1,5 @@
+selenium==4.15.0
+undetected-chromedriver==3.5.3
+faker==19.6.2
+python-dotenv==1.0.0
+webdriver-manager==4.0.1

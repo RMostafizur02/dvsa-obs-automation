@@ -1,6 +1,8 @@
 # DVSA OBS Automation
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![Selenium](https://img.shields.io/badge/selenium-4.15.0-green)
 
 **Advanced DVSA browser automation with fingerprint spoofing & 75% cost reduction vs Multilogin.**
 
@@ -8,44 +10,75 @@
 
 ## 📖 Overview
 
-`dvsa-obs-automation` is a sophisticated automation tool designed specifically for interacting with the DVSA (Driver and Vehicle Standards Agency) Obs (Officer Booking System). It leverages advanced fingerprint spoofing techniques to mimic genuine user behavior, significantly reducing the risk of detection while offering a 75% cost reduction compared to commercial alternatives like Multilogin.
+`dvsa-obs-automation` is a sophisticated automation tool designed specifically for interacting with the DVSA (Driver and Vehicle Standards Agency) Obs (Officer Booking System). This enterprise-grade solution leverages advanced fingerprint spoofing techniques to mimic genuine user behavior, significantly reducing the risk of detection while offering substantial cost savings compared to commercial alternatives.
+
+### 🎯 Key Value Propositions
+
+- **💰 75% Cost Reduction**: Eliminate expensive Multilogin subscriptions while maintaining superior stealth capabilities
+- **🕵️ Advanced Anti-Detection**: Multi-layered fingerprint spoofing that mimics real user behavior patterns
+- **⚡ High Performance**: Optimized for speed and reliability in high-demand booking environments
+- **🔧 Modular Architecture**: Easily extensible and customizable for specific use cases
 
 ## ✨ Features
 
-- **Advanced Fingerprint Spoofing:** Masks automation fingerprints (canvas, WebGL, audio context, fonts, etc.) to appear as a legitimate browser.
-- **Cost-Effective:** Cuts costs by ~75% compared to premium solutions like Multilogin or GoLogin.
-- **DVSA-OBS Optimized:** Tailored specifically for the workflows and patterns of the DVSA booking system.
-- **Stealth Mode:** Implements intelligent delays, human-like mouse movements, and randomized user-agent strings to avoid bot detection.
-- **Lightweight & Efficient:** Built for performance and reliability without the bloat of large commercial platforms.
+### Core Capabilities
+- **Advanced Fingerprint Spoofing**: Comprehensive masking of automation fingerprints including:
+  - Canvas & WebGL fingerprint randomization
+  - Audio context fingerprint spoofing
+  - Font enumeration obfuscation
+  - Hardware concurrency randomization
+  - Screen resolution spoofing
+
+- **Intelligent Behavior Simulation**:
+  - Human-like mouse movements with Bezier curves
+  - Randomized typing speeds and patterns
+  - Natural scroll behavior with acceleration curves
+  - Realistic interaction delays and pauses
+
+- **DVSA-OBS Optimized Workflows**:
+  - Automated login and session management
+  - Smart slot detection with pattern recognition
+  - Instant booking with configurable preferences
+  - Multi-center search capabilities
+
+### Technical Features
+- **Stealth Mode**: Implements multiple evasion techniques:
+  - ChromeDriver detection bypass
+  - WebRTC leak prevention
+  - Timezone and language consistency
+  - Plugin fingerprint randomization
+
+- **Performance Optimizations**:
+  - Parallel slot searching
+  - Intelligent caching mechanisms
+  - Connection pooling
+  - Memory-efficient operations
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed on your machine:
-- **Python 3.8+**
-- **Google Chrome** browser
-- **pip** (Python package manager)
+**System Requirements:**
+- **Python 3.8+** (Recommended: 3.10+)
+- **Google Chrome** (Version 115+)
+- **4GB RAM** minimum, 8GB recommended
+- **Stable internet connection** with low latency
+
+**Required Tools:**
+- `pip` (Python package manager)
+- `git` for version control
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/dvsa-obs-automation.git
-    cd dvsa-obs-automation
-    ```
-
-2.  **Install the required dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Configure the application:**
-    - Update `config.json` with your DVSA credentials and preferences
-    - Adjust browser and automation settings as needed
-
-### Usage
-
-Run the main script:
+#### Method 1: Standard Installation
 ```bash
-python main.py
+# Clone the repository
+git clone https://github.com/your-username/dvsa-obs-automation.git
+cd dvsa-obs-automation
+
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
